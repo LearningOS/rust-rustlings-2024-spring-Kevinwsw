@@ -7,24 +7,25 @@
 //
 // No hints this time!
 
-// I AM NOT DONE
+
+
+fn main() {
+    string_slice("blue");
+    string("red".to_string());
+    string(String::from("hi"));
+    string("rust is fun!".to_owned());
+    string("nice weather".into());
+    string(format!("Interpolation {}", "Station"));
+    string((&String::from("abc")[0..1]).to_string());  // 使用`.to_string()`进行类型转换
+    string("  hello there ".trim().to_string());  // 使用`.to_string()`进行类型转换
+    string("Happy Monday!".to_string().replace("Mon", "Tues"));
+    string("mY sHiFt KeY iS sTiCkY".to_lowercase());
+}
 
 fn string_slice(arg: &str) {
     println!("{}", arg);
 }
+
 fn string(arg: String) {
     println!("{}", arg);
-}
-
-fn main() {
-    ???("blue");
-    ???("red".to_string());
-    ???(String::from("hi"));
-    ???("rust is fun!".to_owned());
-    ???("nice weather".into());
-    ???(format!("Interpolation {}", "Station"));
-    ???(&String::from("abc")[0..1]);
-    ???("  hello there ".trim());
-    ???("Happy Monday!".to_string().replace("Mon", "Tues"));
-    ???("mY sHiFt KeY iS sTiCkY".to_lowercase());
 }
